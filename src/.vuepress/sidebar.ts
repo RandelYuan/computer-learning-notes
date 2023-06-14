@@ -9,6 +9,12 @@ export default sidebar({
       link: '/',
     },
     {
+      text: '简介',
+      icon: 'code',
+      prefix: 'guide/',
+      link: 'guide/',
+    },
+    {
       text: '开发工具',
       icon: '/assets/icon/tools-hardware.png',
       prefix: 'tools/',

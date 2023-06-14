@@ -4,7 +4,7 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { containerPlugin } from '@vuepress/plugin-container'
 
 export default defineUserConfig({
-  base: "/",
+  base: "/computer-learning-notes/",
 
   lang: "zh-CN",
   title: "Randel's Computer Learning Notes",

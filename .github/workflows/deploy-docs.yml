@@ -40,6 +40,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # 这是文档部署到的分支名称
-          ACCESS_TOKEN: ${{ secrets.Github Pages }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
           folder: src/.vuepress/dist

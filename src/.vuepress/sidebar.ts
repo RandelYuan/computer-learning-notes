@@ -2,20 +2,34 @@ import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
   "/": [
-    "",
     {
-      text: "案例",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
+      text: '主页',
+      icon: 'home',
+      prefix: '/',
+      link: '/',
     },
     {
-      text: "文档",
-      icon: "book",
-      prefix: "guide/",
-      children: "structure",
+      text: '开发工具',
+      icon: '/assets/icon/tools-hardware.png',
+      prefix: 'tools/',
+      collapsible: true,
+      children: [
+        {
+          text: 'Git',
+          icon: '/assets/icon/git.png',
+          prefix: 'git',
+          collapsible: true,
+          children: 'structure'
+        }
+      ],
     },
-    "slides",
+    {
+      text: 'test',
+      icon: 'home',
+      prefix: 'demo/',
+      link: 'demo/',
+      collapsible: true,
+      children: 'structure'
+    },
   ],
 });

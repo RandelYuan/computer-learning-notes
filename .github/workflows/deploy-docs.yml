@@ -1,5 +1,5 @@
 
-name: deploy
+name: 部署
 
 on:
   push:

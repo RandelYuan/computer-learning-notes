@@ -1,16 +1,6 @@
 ---
-title: 指南
-icon: lightbulb
+title: 简介
+author: Randel Yuan
 ---
 
 ## 功能亮点
-
-### Bar
-
-- [baz](bar/baz.md)
-- ...
-
-### Foo
-
-- [ray](foo/ray.md)
-- ...

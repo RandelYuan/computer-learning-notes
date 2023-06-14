@@ -3,7 +3,7 @@ author: Randel Yuan
 tag:
   - 版本控制
 ---
-# Git的原理及使用
+ # Git的原理及使用
 
  ## Git简介
 

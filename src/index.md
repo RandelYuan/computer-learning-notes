@@ -1,7 +1,7 @@
 ---
 home: true
 icon: home
-title: 项目主页
+title: 主页
 heroImage: /logo.svg
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
@@ -10,7 +10,7 @@ bgImageStyle:
 heroText: Randel的计算机学习笔记
 tagline: 你可以在这里放置或是整个项目的描述。
 actions:
-  - text: 开始学习 📖
+  - text: 开始学习👨‍💻
     link: ./guide/
     type: primary
 

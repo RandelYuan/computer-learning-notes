@@ -10,7 +10,7 @@ bgImageStyle:
 heroText: Randel的计算机学习笔记
 tagline: 你可以在这里放置或是整个项目的描述。
 actions:
-  - text: 开始学习👨‍💻
+  - text: 开始学习 🎓
     link: ./guide/
     type: primary
 
@@ -259,7 +259,7 @@ highlights:
         link: https://theme-hope.vuejs.press/zh/guide/advanced/pwa.html
 
 copyright: false
-footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2019-present Mr.Hope
+footer: 使用 <a href="https://github.com/RandelYuan/computer-learning-notes/" target="_blank"> Github © 2023 Computer Learning Notes </a> | MIT 协议, 版权所有 © 2023-present Randel Yuan
 ---
 
 这是项目主页的案例。你可以在这里放置你的主体内容。

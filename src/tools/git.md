@@ -1,7 +1,6 @@
 ---
 title: Git
 author: Randel Yuan
-icon: git
 order: 1
 tag:
   - 版本控制

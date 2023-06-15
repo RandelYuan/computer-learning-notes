@@ -18,7 +18,14 @@ export default sidebar({
       // ],
     },
     {
-      text: 'test',
+      text: '其他',
+      prefix: 'others',
+      icon: 'community',
+      collapsible: true,
+      children: 'structure',
+    },
+    {
+      text: '主要功能与配置演示',
       prefix: 'demo/',
       link: 'demo/',
       collapsible: true,

@@ -4,14 +4,13 @@ export default sidebar({
   "/": [
     {
       text: '开发工具',
-      prefix: 'tools/',
-      link: 'tools/',
+      prefix: 'tools',
+      icon: 'operate',
       collapsible: true,
       children: 'structure',
       // children: [
       //   {
       //     text: 'Git',
-      //     icon: '/assets/icon/git.png',
       //     prefix: 'git',
       //     collapsible: true,
       //     children: 'structure'

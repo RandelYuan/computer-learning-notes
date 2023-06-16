@@ -1,5 +1,6 @@
 ---
-title: Git
+title: Git的原理及使用
+shortTitle: Git
 author: Randel Yuan
 order: 1
 tag:

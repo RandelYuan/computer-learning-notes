@@ -3,7 +3,7 @@ title: Node.js
 author: Randel Yuan
 order: 1
 tag:
-  - 问题解决
+  - 解决问题
 ---
 
 ## NVM

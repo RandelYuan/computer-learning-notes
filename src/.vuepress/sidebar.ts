@@ -18,6 +18,13 @@ export default sidebar({
       // ],
     },
     {
+      text: '遇到的问题',
+      prefix: 'problems',
+      icon: 'shell',
+      collapsible: true,
+      children: 'structure',
+    },
+    {
       text: '其他',
       prefix: 'others',
       icon: 'community',

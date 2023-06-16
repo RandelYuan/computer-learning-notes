@@ -6,8 +6,8 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "Randel Yuan",
+    url: "https://github.com/RandelYuan/",
   },
 
   iconAssets: "iconfont",
@@ -24,7 +24,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "默认页脚",
+  footer: "使用 <a href=\"https://github.com/RandelYuan/computer-learning-notes/\" target=\"_blank\"> Github © 2023 Computer Learning Notes </a> | MIT 协议",
 
   displayFooter: true,
 

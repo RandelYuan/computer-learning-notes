@@ -1,0 +1,7 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as n,c as a,f as i}from"./app-1ac643b7.js";const l={},s=i(`<h2 id="nvm" tabindex="-1"><a class="header-anchor" href="#nvm" aria-hidden="true">#</a> NVM</h2><h2 id="npm" tabindex="-1"><a class="header-anchor" href="#npm" aria-hidden="true">#</a> NPM</h2><ul><li><p>运行npm install后报错</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>npm ERR! cb() never called!
+npm ERR! This is an error with npm itself. Please report this error at:
+npm ERR!     &lt;https://npm.community&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol><li>删除项目中的node_modules文件夹和package-lock.json文件，执行以下命令清除npm缓存</li></ol><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>npm cache clean -force
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol start="2"><li>设置的npm镜像后重新运行npm install</li></ol><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>npm config rm registry
+npm install
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li></ul>`,3),t=[s];function d(r,c){return n(),a("div",null,t)}const u=e(l,[["render",d],["__file","nodejs.html.vue"]]);export{u as default};

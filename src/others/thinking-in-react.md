@@ -7,7 +7,7 @@ tag:
  - 编程思维
 ---
 
-这篇文章是我在学习[Thinking in React](https://react.dev/learn/thinking-in-react)的一些收获和思考，可以帮助开发者理解如何将复杂的UI设计分解为独立的、可复用的组件，以及如何通过props和state来处理数据和用户交互。
+这篇文章是我在学习[Thinking in React](https://react.dev/learn/thinking-in-react)的一些收获和思考。React 思维可以帮助开发者理解如何将复杂的UI设计分解为独立的、可复用的组件，以及如何通过props和state来处理数据和用户交互。
 - 根据 React 思维来构建应用，可以让代码更加清晰、更易于维护，也使得应用的行为更加可预测。
 - 学会从组件的角度来思考界面，而不是从页面或者视图的角度。每个组件都有其特定的任务和行为，同时也独立于其他组件。这意味着可以在不影响其他组件的情况下，更新每个组件。
 

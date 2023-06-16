@@ -18,13 +18,15 @@ tag:
    npm ERR!     <https://npm.community>
    ```
 
-    1. 删除项目中的node_modules文件夹和package-lock.json文件，执行以下命令清除npm缓存
+  1. 删除项目中的`node_modules`文件夹和`package-lock.json`文件
+  2. 执行以下命令清除npm缓存
   
-    ```
-    npm cache clean -force
-    ```
-    2. 设置的npm镜像后重新运行npm install
-    ```
-    npm config rm registry
-    npm install
-    ```
+   ```:no-line-numbers 
+   npm cache clean -force
+   ```
+  
+  3. 设置的npm镜像后重新运行`npm install`
+   ```
+   npm config rm registry
+   npm install
+   ```

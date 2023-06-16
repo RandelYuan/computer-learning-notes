@@ -14,10 +14,11 @@ export default defineUserConfig({
       // 索引全部内容
       indexContent: true,
     }),
+      // @ts-ignore
       containerPlugin(  {
         type: 'center',
+        after: () => '</div>\n',
         before: (info: string) => `<div class="customer-container-center">`,
-        after: () => '</div>\n'
       })
   ]
   // Enable it with pwa

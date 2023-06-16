@@ -8,7 +8,7 @@ bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Randel的计算机学习笔记
-tagline: 你可以在这里放置或是整个项目的描述。
+tagline: Randel Yuan在学习工作时的一些收获和一些问题的解决方案
 actions:
   - text: 开始学习 🎓
     link: ./guide/

@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as c,c as t}from"./app-8385579c.js";const r={};function o(s,a){return c(),t("div")}const l=e(r,[["render",o],["__file","elasticsearch.html.vue"]]);export{l as default};

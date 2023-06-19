@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://vuepress-theme-hope-docs-demo.netlify.app/computer-learning-notes/sitemap.xml
+Sitemap: https://github.com/RandelYuan/computer-learning-notes/computer-learning-notes/sitemap.xml

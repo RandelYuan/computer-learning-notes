@@ -133,15 +133,27 @@ tag:
 
  ## Git 的工作区、暂存区和版本库
 
+```Gherkin:no-line-numbers
++----------------+           +----------------+           +----------------+
+|                |  git add  |                |git commit |                |
+|   工作区        | --------> |      暂存区     | --------> |     版本库      |
+|  (Working      |           |  (Staging Area)|           |  (Repository)  |
+|   Directory)   | <-------- |                | <-------- |                |
+|                |  git diff |                |  git diff |                |
++----------------+           +----------------+           +----------------+
+```
+
  ### 工作区
 
-
+ 工作区 (Working Directory) 是指在计算机上能看到的目录，也就是项目所在的文件夹。它包括了项目中的所有文件和子目录。在工作区中，可以编辑、添加和删除文件
 
  ### 暂存区
 
- 
+ 暂存区 (Staging Area) 是一个中间区域，用于临时存储已修改但尚未提交到版本库的文件。通过使用 `git add` 命令，可以将工作区中修改的文件添加到暂存区。这样做的好处是: 可以选择性地提交一部分修改，而不是一次性提交所有修改
  
  ### 版本库
+
+ 版本库 (Repository) 是 Git 管理的一个数据库，用于保存已提交的文件和文件夹的历史版本。当执行 `git commit` 命令时，暂存区中的文件会被永久性地保存到版本库中。版本库中包含了提交历史、分支信息以及其他元数据。
 
  ## Git 基础操作
 
@@ -157,7 +169,7 @@ tag:
 
  也可以在一个空目录下初始化 Git 仓库。这是从零开始创建一个项目的好方法。首先，需要创建一个新的空目录，然后进入该目录并执行 `git init` 命令:
 
- ```:no-line-numbers
+ ```
  mkdir new_project
  cd new_project
  git init
@@ -175,15 +187,92 @@ tag:
 
  ### 添加文件到暂存区
 
+ 要将文件添加到暂存区，可以使用 `git add` 命令。可以一次性添加一个文件，也可以添加多个文件，甚至整个目录
+
+ - 添加一个文件:
+
+ ```:no-line-numbers
+ git add filename
+ ```
+
+ - 添加多个文件:
+
+ ```:no-line-numbers
+ git add file1 file2 file3
+ ```
+
+ - 添加整个目录
+
+ ```:no-line-numbers
+ git add .
+ ```
+
  ### 提交更改到本地仓库
+
+在将文件添加到暂存区后，可以使用 `git commit` 命令将这些更改提交到本地仓库。为了方便追踪，建议在每次提交时附上一个简洁明了的提交信息
+
+ ```:no-line-numbers
+ git commit -m "提交信息"
+ ```
 
  ### 查看仓库状态
 
+ 要查看当前仓库的状态，可以使用 `git status` 命令。此命令会显示当前分支、有哪些文件被修改且未提交，以及哪些文件已添加到暂存区但尚未提交
+
+ ```:no-line-numbers
+ git status
+ ```
+
  ### 查看提交历史
+
+ 要查看仓库的提交历史，可以使用 `git log` 命令。可以通过不同选项来定制输出的格式和内容。
+
+ - 查看简洁的提交历史:
+
+ ```:no-line-numbers
+ git log --online
+ ```
+
+ - 查看带图形化分支结构的提交历史:
+
+ ```:no-line-numbers
+ git log --graph --online
+ ```
 
  ### 撤销更改
 
+ - 取消工作区中的更改:
+
+ ```:no-line-numbers
+ git checkout --filename
+ ```
+
+ - 取消暂存区中的更改:
+ 
+ ```:no-line-numbers
+ git reset HEAD filename
+ ```
+
+ - 撤销上一次提交:
+
+ ```:no-line-numbers
+ git revert HEAD
+ ```
+
+ - 回滚到指定的提交:
+
+ ```:no-line-numbers
+ git reset commit_hash
+ ```
+
  ### 删除文件
+
+ 要在 Git 中删除一个文件，可以使用 `git rm` 命令。这将同时从工作区和暂存区中删除文件。然后，需要执行一次提交操作以将删除更新到本地仓库。
+
+ ```
+ git rm filename
+ git commit -m "提交信息"
+ ```
 
  ## Git 分支管理
 

@@ -8,3 +8,5 @@ tag:
   - 搜索引擎
   - 数据分析引擎
 ---
+## ElasticSearch
+测试部署

@@ -36,7 +36,7 @@ tag:
  - 随着时间推移，会变化
  - 不同通过 props 从父组件传递
  - 不基于已存在于组件中的 state 或者 props 进行计算
- :::[config](..%2F..%2F.git%2Fconfig)
+ :::
 
 ## Step 4: 确定哪些组件应该拥有 state
 

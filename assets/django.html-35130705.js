@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o,c as t}from"./app-6f54ac9e.js";const c={};function r(n,_){return o(),t("div")}const f=e(c,[["render",r],["__file","django.html.vue"]]);export{f as default};

@@ -137,6 +137,43 @@ tag:
  - 在 "Title" 字段中，为你的密钥起一个描述性的名称
  - 在 "Key" 字段中，粘贴你之前复制的公钥内容
  - 点击 "Add SSH key" 按钮
+   
+::: tip Windows中配置多个SSH key
+ 1. 在 `.ssh` 目录下生成多个SSH key 
+```terminal
+ssh-keygen -t rsa -b 4096 -C "youremail@example.com" -f ./github
+ssh-keygen -t rsa -b 4096 -C "youremail@example.com" -f ./gitlab
+```
+ 2. 创建 `config` 文件
+ 在 `.ssh` 目录下创建一个名为 `config` 的文件。在这个文件中，可以配置多个SSH key。文件示例如下:
+
+```text
+# Default GitHub
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+# Second GitHub account
+Host github.com-newkey
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_newkey
+  
+# IP + Port
+Host gitee.com
+  HostName 127.0.0.1
+  Port 8080
+  User username
+  IdentityFile ~/.ssh/gitlab
+```
+
+ 3. 在 Git 中使用特定的 SSH key。
+ 根据在 `config` 文件中设置的Host，可以在Git中使用特定的 SSH key。例如:
+```terminal:no-line-numbers
+git clone git@github.com-newkey:username/repo.git
+```
+:::
 
  ## Git 的工作区、暂存区和版本库
 

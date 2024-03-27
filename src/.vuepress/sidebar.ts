@@ -17,6 +17,13 @@ export default sidebar({
       children: 'structure'
     },
     {
+      text: '设计模式',
+      prefix: 'design-patterns',
+      icon: 'template',
+      collapsible: true,
+      children: "structure"
+    },
+    {
       text: '前端开发',
       prefix: 'front-end',
       icon: 'window',
